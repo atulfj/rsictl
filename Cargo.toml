@@ -10,7 +10,7 @@ description = "Command line interface for the RSI kernel module"
 [dependencies]
 clap = { version = "*", features = ["derive"] }
 rust-rsi = { git = "https://github.com/islet-project/rust-rsi" }
-rand = "*"
+rand = { version = "0.8", features = ["std", "alloc"] }
 
 [profile.release]
 strip = true
